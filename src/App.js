@@ -5,6 +5,7 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Billing from "./components/Billing";
 import Stats from "./components/Stats";
 import Tets from "./components/Tets";
 import styles from "./style";
@@ -25,6 +26,7 @@ function App() {
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Bussiness />
+          <Billing/>
           <CardDeal />
           <Tets />
           <Client />

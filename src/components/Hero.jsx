@@ -22,8 +22,8 @@ const Hero = () => {
             The Next <br className="sm:block hidden" /> {"  "}{" "}
             <span className="text-gradient">Generation</span>
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStart />
+          <div className="ss:flex hidden md:mr-4 ml-8">
+            <GetStart className='hover:scale-125' />
           </div>
         </div>
         <h1 className="w-full text-white font-poppins font-semibold ss:text-[68px] ss:leading-[100px] leading-[75px] text-[52px] ">
@@ -35,11 +35,14 @@ const Hero = () => {
           ea illum. Suscipit tenetur a sit voluptatum facilis libero alias?
         </p>
       </div>
-      <div>
+      <div className={`flex flex-1 relative my-10 md:my-0 ${styles.flexCenter}`}>
         <img src={robot} className="w-[100%] h-[100%] z-[5] relative" alt="" />
-        <div className="pink__gradient absolute  top-0 z-0 w-[40%] h-[35%]" />
-        <div className="white__gradient absolute rounded-full left-0  bottom-40 z-[1] w-[80%] h-[80%]" />
+        <div className="pink__gradient absolute  top-10 z-0 w-[40%] h-[35%]" />
+        <div className="white__gradient absolute rounded-full   bottom-40 z-[1] w-[80%] h-[80%]" />
         <div className="blue__gradient absolute  right-20 bottom-20 z-0 w-[50%] h-[50%]" />
+      </div>
+      <div className={` ss:hidden ${styles.flexCenter}`}>
+<GetStart/>
       </div>
     </section>
   );

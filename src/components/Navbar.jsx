@@ -7,13 +7,17 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <div className="">
-      <nav className="w-full  flex justify-between items-center navbar py-6">
-        <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
+      <nav className="w-full   flex justify-between items-center navbar py-6">
+        <img
+          src={logo}
+          alt="hoobank"
+          className="w-[124px] cursor-pointer h-[32px]"
+        />
         <ul className="hidden list-none sm:flex justify-end items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${
+              className={`font-poppins font-normal hover:text-[#78E3EA]  hover:scale-[1.7] ease-in-ease-out duration-300 text-[16px] text-white ${
                 index === navLinks.length - 1 ? "mr-0" : "mr-10"
               }`}
             >
@@ -37,7 +41,7 @@ const Navbar = () => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${
+                  className={`font-poppins font-normal text-[16px] text-white ${
                     index === navLinks.length - 1 ? "mr-0" : "mb-2"
                   }`}
                 >

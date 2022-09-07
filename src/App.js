@@ -7,7 +7,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Billing from "./components/Billing";
 import Stats from "./components/Stats";
-import Tets from "./components/Tets";
+import Tets from "./components/Test";
 import styles from "./style";
 function App() {
   return (

@@ -40,9 +40,10 @@ const Navbar = () => {
             <ul className=" list-none flex flex-col justify-center items-center flex-1">
               {navLinks.map((nav, index) => (
                 <li
+                  onClick={() => setToggle((prev) => !prev)}
                   key={nav.id}
                   className={`font-poppins font-normal text-[16px] text-white ${
-                    index === navLinks.length - 1 ? "mr-0" : "mb-2"
+                    index === navLinks.length - 1 ? "mr-0" : "mb-10"
                   }`}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>

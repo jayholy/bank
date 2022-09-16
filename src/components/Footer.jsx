@@ -15,7 +15,7 @@ const Footer = () => {
           />
           <p className={`${styles.paragraph} text-left mt-4 max-w-[355px]`}>
             {" "}
-            Lorem ipsum dolor, a exercitationem ullam ea tempora eligendi.
+            Lorem red dolor, a exercitationem ullam ea tempora eligendi.
           </p>
         </div>
         <div
